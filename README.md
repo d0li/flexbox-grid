@@ -1,13 +1,13 @@
-### Flexbox Grid.
+# Flexbox Grid.
 Flexbox Grid est un système de grille complet en CSS. Il utilise les flexbox layout ce qui lui permet une meilleure gestion des positionnements. Il est compatible IE 10+, ce qui lui permet de s'implémenter dans des projets de plus en plus vaste.
 
 
-### Installation
+## Installation
 ```html
 <link rel="stylesheet" href="https://rawgit.com/w-jerome/flexbox-grid/master/src/flexbox-grid.min.css">
 ```
 
-### Introduction
+## Introduction
 Flexbox Grid utilise les classes pour se structurer. Les classes sont nommé sans abréviations, ce qui permet pour un nouvel utilisateur de comprendre plus facilement l'utilisation de l'outil.
 
 Il utilise toujours le plus petit écran renseigné comme point de départ, par exemple si une colonne n'a que la classe `small-6` il va l'appliquer sur tous les écrans, cela évite d'écrire `small-6 medium-6 large-6 xlarge-6 xxlarge-6`
@@ -20,18 +20,61 @@ Les points de rupture (breakpoints) sont ceux utilisé par Foundation :
     xlarge  : min-width 1441px
     xxlarge : min-width 1921px
 
-### Premier pas
+## Premier pas
 
 Pour le système de grille est similaire aux autres frameworks
+
+### Basique
 
 ```html
 <div class="row">
     <div class="column small-3">
-        small-3
+        column small-3
     </div>
+    <div class="column small-3">
+        column small-3
+    </div>
+    <div class="column small-3">
+        column small-3
+    </div>
+    <div class="column small-3">
+        column small-3
+    </div>
+</div>
+```
+
+Il est important de noter que par défaut si une colonne n'a plus de place, elle va automatiquement se placer sur une nouvelle ligne. Il n'y a donc pas besoin d'attribuer de classe `end` une fois que la `row` est pleine.
+
+Par ailleurs, si la `row` n'est pas pleine, elle ne va pas s'étendre dans le reste de la ligne et restera aligné à gauche.
+
+#### Sans gouttières
+
+Par défaut une gouttière de 1em est attribuée, mais il est possible de supprimer cette gouttière sur l'ensemble des colonnes ou sur une seule en particulier, l'inverse est également possible :
+
+```html
+<div class="row no-gutter">
     <div class="column small-3">
         small-3
     </div>
+    <div class="column small-3 no-gutter">
+        small-3  no-gutter
+    </div>
+    <div class="column small-3 gutter">
+        small-3 gutter
+    </div>
+    <div class="column small-3 gutter">
+        small-3 gutter
+    </div>
+</div>
+```
+
+
+### Alignement horizontal
+
+Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe `content-left`, `content-center` et `content-right` (à appliquer sur la `row`) :
+
+```html
+<div class="row content-center">
     <div class="column small-3">
         small-3
     </div>
@@ -40,12 +83,3 @@ Pour le système de grille est similaire aux autres frameworks
     </div>
 </div>
 ```
-
-### Rather Drive Stick?
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
-
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
-
-### Support or Contact
-Having trouble with Pages? Check out the documentation at https://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
