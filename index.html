@@ -136,10 +136,47 @@ xxlarge : min-width 1921px
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
-<h4>
-<a id="pousser-la-colonne" class="anchor" href="#pousser-la-colonne" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pousser la colonne</h4>
+<h3>
+<a id="avancée" class="anchor" href="#avanc%C3%A9e" aria-hidden="true"><span class="octicon octicon-link"></span></a>Avancée</h3>
 
-<p>Flexbox Grid donne la possibilité de pousser une colonne vers la gauche ou la droite avec la classe <code>pull-*</code>, par défaut elle pousse la colonne choisi (et les suivantes) toutes à gauche ou toutes à droite (<code>small-pull-right</code>, <code>medium-pull-left</code>, ...) :</p>
+<h3>
+<a id="gestion-des-alignements" class="anchor" href="#gestion-des-alignements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gestion des alignements</h3>
+
+<h4>
+<a id="horizontale" class="anchor" href="#horizontale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontale</h4>
+
+<h5>
+<a id="centrer-les-colonnes" class="anchor" href="#centrer-les-colonnes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Centrer les colonnes</h5>
+
+<p>Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe <code>content-left</code>, <code>content-center</code> et <code>content-right</code> (à appliquer sur le conteneur <code>row</code>) :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row content-center<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Vous pouvez aussi centrer une colonne en particulier :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-2<span class="pl-pds">"</span></span>&gt;
+        small-2
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-2 small-centered<span class="pl-pds">"</span></span>&gt;
+        small-2 small-centered
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-2<span class="pl-pds">"</span></span>&gt;
+        small-2
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h5>
+<a id="pousser-la-colonne" class="anchor" href="#pousser-la-colonne" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pousser la colonne</h5>
+
+<p>Flexbox Grid donne la possibilité de pousser une colonne vers la gauche ou la droite avec la classe <code>*-pull-*</code>, par défaut elle pousse la colonne choisit (et les suivantes) toutes à gauche ou toutes à droite (<code>small-pull-right</code>, <code>medium-pull-left</code>, ...) :</p>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4<span class="pl-pds">"</span></span>&gt;
@@ -158,25 +195,6 @@ xxlarge : min-width 1921px
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-2 small-pull-right-2<span class="pl-pds">"</span></span>&gt;
         small-4 small-2 small-pull-right-2
-    &lt;/<span class="pl-ent">div</span>&gt;
-&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
-
-<hr>
-
-<h3>
-<a id="gestion-des-alignements" class="anchor" href="#gestion-des-alignements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gestion des alignements</h3>
-
-<h4>
-<a id="horizontale" class="anchor" href="#horizontale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontale</h4>
-
-<p>Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe <code>content-left</code>, <code>content-center</code> et <code>content-right</code> (à appliquer sur le conteneur <code>row</code>) :</p>
-
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row content-center<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
-    &lt;/<span class="pl-ent">div</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
@@ -202,6 +220,32 @@ xxlarge : min-width 1921px
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background: #f6f6f6;<span class="pl-pds">"</span></span>&gt;
         small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Il est également possible de le faire sur une colonne spécifique :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row <span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4<span class="pl-pds">"</span></span>&gt;
+        small-4
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4 small-center<span class="pl-pds">"</span></span>&gt;
+        small-4 small-center
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4<span class="pl-pds">"</span></span>&gt;
+        small-4
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
+        &lt;<span class="pl-ent">br</span>&gt;
+        Je suis du texte
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
