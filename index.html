@@ -59,16 +59,16 @@ xxlarge : min-width 1921px
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-6 medium-3<span class="pl-pds">"</span></span>&gt;
-        column small-3
+        column small-6 medium-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-6 medium-3<span class="pl-pds">"</span></span>&gt;
-        column small-3
+        column small-6 medium-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-6 medium-3<span class="pl-pds">"</span></span>&gt;
-        column small-3
+        column small-6 medium-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-6 medium-3<span class="pl-pds">"</span></span>&gt;
-        column small-3
+        column small-6 medium-3
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
@@ -133,6 +133,31 @@ xxlarge : min-width 1921px
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-12 small-landscape-6<span class="pl-pds">"</span></span>&gt;
         small-12 small-landscape-6
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h4>
+<a id="pousser-la-colonne" class="anchor" href="#pousser-la-colonne" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pousser la colonne</h4>
+
+<p>Flexbox Grid donne la possibilité de pousser une colonne vers la gauche ou la droite avec la classe <code>pull-*</code>, par défaut elle pousse la colonne choisi (et les suivantes) toutes à gauche ou toutes à droite (<code>small-pull-right</code>, <code>medium-pull-left</code>, ...) :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4<span class="pl-pds">"</span></span>&gt;
+        small-4
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4 small-pull-right<span class="pl-pds">"</span></span>&gt;
+        small-4 small-pull-right
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Mais il est également possible de choisir de combien la pousser (<code>large-pull-right-2</code>, <code>small-pull-left-6</code>, ...)</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-4<span class="pl-pds">"</span></span>&gt;
+        small-4
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-2 small-pull-right-2<span class="pl-pds">"</span></span>&gt;
+        small-4 small-2 small-pull-right-2
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
