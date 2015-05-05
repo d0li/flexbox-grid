@@ -137,15 +137,43 @@ xxlarge : min-width 1921px
 <hr>
 
 <h3>
-<a id="alignement-horizontal" class="anchor" href="#alignement-horizontal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alignement horizontal</h3>
+<a id="gestion-des-alignements" class="anchor" href="#gestion-des-alignements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Gestion des alignements</h3>
 
-<p>Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe <code>content-left</code>, <code>content-center</code> et <code>content-right</code> (à appliquer sur la <code>row</code>) :</p>
+<h4>
+<a id="horizontale" class="anchor" href="#horizontale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horizontale</h4>
+
+<p>Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe <code>content-left</code>, <code>content-center</code> et <code>content-right</code> (à appliquer sur le conteneur <code>row</code>) :</p>
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row content-center<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
         small-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h4>
+<a id="verticale" class="anchor" href="#verticale" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verticale</h4>
+
+<p>De base les colonnes sont aligné en haut du conteneur (<code>row</code>), mais il est également possible de les positionner au centre ou en bas avec les classes <code>column-begin-top</code>, <code>column-begin-bottom</code> et <code>column-center</code> (à appliquer sur le conteneur <code>row</code>) :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row content-center column-center<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Il existe d'autres options d'alignement verticale comme <code>column-full-height</code> et <code>column-baseline</code>, qui s'applique respectivement à la hauteur complète du conteneur et sur la ligne de base des textes :</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row column-full-height column-center<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>height: 150px;<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background: #f6f6f6;<span class="pl-pds">"</span></span>&gt;
+        small-3
+    &lt;/<span class="pl-ent">div</span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>background: #f6f6f6;<span class="pl-pds">"</span></span>&gt;
         small-3
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
