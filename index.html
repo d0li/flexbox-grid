@@ -55,18 +55,22 @@ xxlarge : min-width 1921px
 
 <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
+        column small-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
+        column small-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
+        column small-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
-        small-3
+        column small-3
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Il est important de noter que par défaut si une colonne n'a plus de place, elle va automatiquement se placer sur une nouvelle ligne. Il n'y a donc pas besoin d'attribuer de classe <code>end</code> une fois que la <code>row</code> est pleine.</p>
+
+<p>Par ailleurs, si la <code>row</code> n'est pas pleine, elle ne va pas s'étendre dans le reste de la ligne et restera aligné à gauche.</p>
 
 <h4>
 <a id="sans-gouttières" class="anchor" href="#sans-goutti%C3%A8res" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sans gouttières</h4>
@@ -78,32 +82,26 @@ xxlarge : min-width 1921px
         small-3
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 no-gutter<span class="pl-pds">"</span></span>&gt;
-        small-3
+        small-3  no-gutter
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 gutter<span class="pl-pds">"</span></span>&gt;
-        small-3
+        small-3 gutter
     &lt;/<span class="pl-ent">div</span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 gutter<span class="pl-pds">"</span></span>&gt;
-        small-3
+        small-3 gutter
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
 
 <h3>
-<a id="sans-gouttières-1" class="anchor" href="#sans-goutti%C3%A8res-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sans gouttières</h3>
+<a id="alignement-horizontal" class="anchor" href="#alignement-horizontal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alignement horizontal</h3>
 
-<p>Par défaut une gouttière de 1em est attribuée, mais il est possible de supprimer cette gouttière sur l'ensemble des colonnes ou sur une seule en particulier, l'inverse est également possible :</p>
+<p>Par défaut, les colonnes sont aligné à gauche, mais il est possible de les centrer ou de les aligner à droite avec les classe <code>content-left</code>, <code>content-center</code> et <code>content-right</code> (à appliquer sur la <code>row</code>) :</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row no-gutter<span class="pl-pds">"</span></span>&gt;
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>row content-center<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
         small-3
     &lt;/<span class="pl-ent">div</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 no-gutter<span class="pl-pds">"</span></span>&gt;
-        small-3
-    &lt;/<span class="pl-ent">div</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 gutter<span class="pl-pds">"</span></span>&gt;
-        small-3
-    &lt;/<span class="pl-ent">div</span>&gt;
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3 gutter<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>column small-3<span class="pl-pds">"</span></span>&gt;
         small-3
     &lt;/<span class="pl-ent">div</span>&gt;
 &lt;/<span class="pl-ent">div</span>&gt;</pre></div>
