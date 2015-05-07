@@ -67,6 +67,7 @@
     .row > .small-10 { width: 83.33334%; }
     .row > .small-11 { width: 91.66667%; }
     .row > .small-12 { width: 100%; }
+    .row > .small-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .small-no-gutter { padding: 0; }
@@ -187,6 +188,7 @@
     .row > .small-landscape-10 { width: 83.33334%; }
     .row > .small-landscape-11 { width: 91.66667%; }
     .row > .small-landscape-12 { width: 100%; }
+    .row > .small-landscape-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .small-landscape-no-gutter { padding: 0; }
@@ -307,6 +309,7 @@
     .row > .medium-10 { width: 83.33334%; }
     .row > .medium-11 { width: 91.66667%; }
     .row > .medium-12 { width: 100%; }
+    .row > .medium-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .medium-no-gutter { padding: 0; }
@@ -427,6 +430,7 @@
     .row > .medium-landscape-10 { width: 83.33334%; }
     .row > .medium-landscape-11 { width: 91.66667%; }
     .row > .medium-landscape-12 { width: 100%; }
+    .row > .medium-landscape-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .medium-landscape-no-gutter { padding: 0; }
@@ -547,6 +551,7 @@
     .row > .large-10 { width: 83.33334%; }
     .row > .large-11 { width: 91.66667%; }
     .row > .large-12 { width: 100%; }
+    .row > .large-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .large-no-gutter { padding: 0; }
@@ -667,6 +672,7 @@
     .row > .xlarge-10 { width: 83.33334%; }
     .row > .xlarge-11 { width: 91.66667%; }
     .row > .xlarge-12 { width: 100%; }
+    .row > .xlarge-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .xlarge-no-gutter { padding: 0; }
@@ -787,6 +793,7 @@
     .row > .xxlarge-10 { width: 83.33334%; }
     .row > .xxlarge-11 { width: 91.66667%; }
     .row > .xxlarge-12 { width: 100%; }
+    .row > .xxlarge-flex { width: auto; -webkit-box-flex: 1; -webkit-flex: 1; -ms-flex: 1; flex: 1; }
     
     /* gutter */
     .row > .xxlarge-no-gutter { padding: 0; }
