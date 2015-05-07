@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Examples Flex grid</title>
+		
+		<meta name="description" content="Examples Flex grid">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="../src/flexbox-grid.css">
+		<link rel="stylesheet" href="examples.css">
+		
+    </head>
+    <body>
+		
+        <h2>Content offset ([device]-offset-[number])</h2>
+        
+        <div class="row margin-bottom-medium">
+            <div class="column small-3 small-offset-3">
+                <div class="block">
+                    small-3 small-offset-3
+                </div>
+            </div>
+            <div class="column small-3">
+                <div class="block">
+                    small-3
+                </div>
+            </div>
+        </div>
+        
+        <div class="row margin-bottom-medium">
+            <div class="column small-6">
+                <div class="block">
+                    small-6
+                </div>
+            </div>
+            <div class="column small-2 small-offset-4">
+                <div class="block">
+                    small-2 small-offset-4
+                </div>
+            </div>
+        </div>
+        
+        <h2>Content order ([device]-order-[number])</h2>
+        
+        <div class="row margin-bottom-medium">
+            <div class="column small-4 small-order-2">
+                <div class="block">
+                    <h2>1</h2>
+                    <h3>small-4 small-order-2</h3>
+                </div>
+            </div>
+            <div class="column small-4">
+                <div class="block">
+                    <h2>2</h2>
+                    <h3>small-4</h3>
+                </div>
+            </div>
+            <div class="column small-4 small-order-1">
+                <div class="block">
+                    <h2>3</h2>
+                    <h3>small-4 small-order-1</h3>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Content order ([device]-order-[number]-and-brother)</h2>
+
+        <div class="row margin-bottom-medium">
+            <div class="column small-4 small-order-2-and-brother">
+                <div class="block">
+                    <h2>1</h2>
+                    <h3>small-4 small-order-2-and-brother</h3>
+                </div>
+            </div>
+            <div class="column small-4">
+                <div class="block">
+                    <h2>2</h2>
+                    <h3>small-4</h3>
+                </div>
+            </div>
+            <div class="column small-4 small-order-1">
+                <div class="block">
+                    <h2>3</h2>
+                    <h3>small-4 small-order-1</h3>
+                </div>
+            </div>
+        </div>
+        
+	</body>
+</html>
